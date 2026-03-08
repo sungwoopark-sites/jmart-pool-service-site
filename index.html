@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JMart Pool Service | Pool Cleaning & Maintenance in Fullerton, CA</title>
+  <meta name="description" content="JMart Pool Service offers professional pool cleaning, maintenance, filter cleaning, pump repair, and acid wash services in Fullerton, CA and all Orange County. Licensed, bonded, insured since 2010. Call (714) 907-4517.">
+  <meta name="keywords" content="pool service Fullerton CA, pool cleaning Orange County, pool maintenance, pool pump repair, acid wash, pool filter cleaning">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JMart Pool Service | Pool Cleaning & Maintenance Fullerton CA">
+  <meta property="og:description" content="Licensed, bonded, insured pool service since 2010. Pool cleaning, maintenance, filter cleaning, pump repair & acid wash. Serving all Orange County.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jmart-pool-service-site.vercel.app/">
+  <meta property="og:image" content="https://jmart-pool-service-site.vercel.app/assets/images/hero.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="600">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JMart Pool Service | Fullerton CA">
+  <meta name="twitter:description" content="Licensed pool cleaning & maintenance since 2010. Serving all Orange County.">
+  <meta name="twitter:image" content="https://jmart-pool-service-site.vercel.app/assets/images/hero.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts — non-render-blocking -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"></noscript>
+
+  <!-- Hero preload -->
+  <link rel="preload" as="image" href="assets/images/hero.webp">
+
+  <!-- Critical CSS inline -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #1a2a3a;
+      background: #fff;
+      line-height: 1.6;
+    }
+    /* NAV */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(11, 95, 165, 0.97);
+      backdrop-filter: blur(8px);
+      padding: 0 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-logo img { height: 44px; width: auto; }
+    .nav-logo-text { color: #fff; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.1rem; line-height: 1.1; }
+    .nav-logo-sub { display: block; font-size: 0.68rem; font-weight: 400; opacity: 0.85; letter-spacing: 0.05em; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.9); text-decoration: none; padding: 0.5rem 0.85rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500; transition: background 0.2s, color 0.2s; }
+    .nav-links a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav-cta { background: #fff; color: #0B5FA5; padding: 0.55rem 1.2rem; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 0.9rem; transition: transform 0.2s, box-shadow 0.2s; }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; color: #fff; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: currentColor; margin: 5px 0; border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+    .mobile-nav { display: none; position: fixed; top: 68px; left: 0; right: 0; background: #0B5FA5; padding: 1rem; z-index: 999; }
+    .mobile-nav ul { list-style: none; }
+    .mobile-nav li a { display: block; color: #fff; text-decoration: none; padding: 0.75rem 1rem; border-radius: 8px; font-weight: 500; }
+    .mobile-nav li a:hover { background: rgba(255,255,255,0.15); }
+    .mobile-nav .mobile-cta { display: block; background: #fff; color: #0B5FA5; text-align: center; padding: 0.85rem; border-radius: 8px; font-weight: 700; margin-top: 0.75rem; text-decoration: none; }
+    /* HERO */
+    .hero {
+      min-height: 100svh;
+      background: linear-gradient(135deg, #0B5FA5 0%, #1a2a3a 100%);
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+      padding-top: 68px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('assets/images/hero.webp') center/cover no-repeat;
+      opacity: 0.35;
+    }
+    .hero-content {
+      position: relative; z-index: 1;
+      max-width: 1200px; margin: 0 auto;
+      padding: 4rem 1.5rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+      color: #fff; padding: 0.4rem 0.9rem; border-radius: 999px;
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: 'Poppins', sans-serif; font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 1.25rem;
+    }
+    .hero h1 span { color: #7ec8f0; }
+    .hero-desc { color: rgba(255,255,255,0.88); font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.7; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: #fff; color: #0B5FA5;
+      padding: 0.85rem 1.8rem; border-radius: 10px;
+      font-weight: 700; font-size: 1rem; text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+    .btn-secondary {
+      border: 2px solid rgba(255,255,255,0.6); color: #fff;
+      padding: 0.85rem 1.8rem; border-radius: 10px;
+      font-weight: 600; font-size: 1rem; text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
+    .hero-stats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
+    }
+    .hero-stat {
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px; padding: 1.25rem;
+      backdrop-filter: blur(8px);
+    }
+    .hero-stat-num { font-family: 'Poppins', sans-serif; font-size: 2rem; font-weight: 800; color: #fff; }
+    .hero-stat-label { color: rgba(255,255,255,0.75); font-size: 0.85rem; margin-top: 0.2rem; }
+    /* SECTIONS */
+    section { padding: 5rem 1.5rem; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-tag {
+      display: inline-block; color: #0B5FA5;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    h2 { font-family: 'Poppins', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: #1a2a3a; line-height: 1.2; margin-bottom: 1rem; }
+    .section-subtitle { font-size: 1.05rem; color: #4a6070; max-width: 640px; margin-bottom: 3rem; line-height: 1.7; }
+    /* FOOTER placeholder */
+    footer { background: #0d1a27; color: rgba(255,255,255,0.8); }
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-hamburger { display: block; }
+      .hero-content { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 1.25rem; }
+      .hero-stats { display: none; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+
+  <!-- Full stylesheet — non-render-blocking -->
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+  <!-- Animations — non-render-blocking -->
+  <link rel="stylesheet" href="css/animations.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/animations.css"></noscript>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "JMart Pool Service",
+    "description": "Licensed, bonded, insured pool cleaning and maintenance company serving Fullerton, CA and all Orange County since 2010.",
+    "url": "https://jmart-pool-service-site.vercel.app/",
+    "telephone": "(714) 907-4517",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fullerton",
+      "addressRegion": "CA",
+      "postalCode": "92833",
+      "addressCountry": "US"
+    },
+    "image": "https://jmart-pool-service-site.vercel.app/assets/images/hero.webp",
+    "openingHours": [
+      "Mo-Sa 08:00-18:00"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/jmartpoolservice/"
+    ],
+    "paymentAccepted": "Cash, Check, Venmo, CashApp, Zelle",
+    "hasMap": "https://maps.app.goo.gl/UjfJaHHCQzKPg18J7"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo" aria-label="JMart Pool Service — home">
+      <img src="assets/images/logo-200.png" alt="JMart Pool Service logo" width="120" height="44" loading="eager">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:+17149074517" class="nav-cta">Call (714) 907-4517</a>
+    <button class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-nav" id="hamburger-btn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav" aria-hidden="true" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="#services" tabindex="-1">Services</a></li>
+      <li><a href="#pricing" tabindex="-1">Pricing</a></li>
+      <li><a href="#about" tabindex="-1">About</a></li>
+      <li><a href="#testimonials" tabindex="-1">Reviews</a></li>
+      <li><a href="#contact" tabindex="-1">Contact</a></li>
+    </ul>
+    <a href="tel:+17149074517" class="mobile-cta" tabindex="-1">Call (714) 907-4517</a>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Serving Orange County Since 2010
+          </div>
+          <h1>Crystal Clear Pools, <span>Every Week</span></h1>
+          <p class="hero-desc">Licensed, bonded, and insured pool service you can trust. Regular maintenance, filter cleaning, pump repair, acid wash — we take care of everything so you can enjoy your pool.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Get a Free Estimate</a>
+            <a href="tel:+17149074517" class="btn-secondary">Call (714) 907-4517</a>
+          </div>
+        </div>
+        <div class="hero-stats" aria-label="Key facts">
+          <div class="hero-stat">
+            <div class="hero-stat-num">2010</div>
+            <div class="hero-stat-label">In business since</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">20+</div>
+            <div class="hero-stat-label">Cities served in OC</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">LBI</div>
+            <div class="hero-stat-label">Licensed, bonded, insured</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">Free</div>
+            <div class="hero-stat-label">Estimates on all work</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner" aria-label="Special offers">
+      <div class="container">
+        <div class="promo-grid">
+          <div class="promo-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <strong>New Customer Deal:</strong> $130 Off on 2nd Month or Free Filter Cleaning <em>w/ 6-Month Agreement</em>
+          </div>
+          <div class="promo-divider" aria-hidden="true"></div>
+          <div class="promo-item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <strong>Customer Referral:</strong> $130 Off for every friend you send our way
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <span class="section-tag">What We Do</span>
+        <h2 id="services-heading">Complete Pool Care Services</h2>
+        <p class="section-subtitle">From routine weekly maintenance to equipment repairs, we handle every aspect of pool care for homeowners and businesses across Orange County.</p>
+        <div class="services-grid">
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <img src="assets/images/pool-maintenance.jpg" alt="Pool maintenance technician at work" width="400" height="300" loading="lazy">
+            </div>
+            <div class="service-body">
+              <h3>Regular Pool Maintenance</h3>
+              <p>Weekly, bi-weekly, and other scheduled maintenance options including chemical balancing, pool inspections, cleaning, and lighting replacement. We bring all equipment and chemicals.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <img src="assets/images/filter-pumps.webp" alt="Pool filter pump equipment" width="400" height="300" loading="lazy">
+            </div>
+            <div class="service-body">
+              <h3>Pool Filter Cleaning</h3>
+              <p>Thorough filter cleaning to remove debris, mold, and obstructions. A clean filter means clean, safe water. We'll remove, clean, and reinstall filters properly — no dirty water mixing in.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <img src="assets/images/pump-repair.webp" alt="Pool pump repair service" width="400" height="300" loading="lazy">
+            </div>
+            <div class="service-body">
+              <h3>Motor Pump Repair</h3>
+              <p>Leaks, strange noises, electrical issues — don't let pump problems go unaddressed. We diagnose and repair pool pumps quickly, using high-quality parts for long-lasting results.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon service-icon-solid" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3h18v18H3z" rx="2"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <div class="service-body">
+              <h3>Pool Acid Wash</h3>
+              <p>When your pool has been sitting or is heavily stained, an acid wash restores it to full clarity. We drain and clean completely, getting your pool ready for use.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <img src="assets/images/lighting.jpg" alt="Pool lighting installation" width="400" height="300" loading="lazy">
+            </div>
+            <div class="service-body">
+              <h3>Pool Lighting Installation</h3>
+              <p>Lighting installation, replacement, and upgrades including LED and spa lights. Intermatic timer upgrades and electrical issue repairs also available.</p>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon service-icon-solid" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            </div>
+            <div class="service-body">
+              <h3>Equipment & Automation</h3>
+              <p>Equipment installation, salt systems, automation upgrades and repairs, valve replacements, sand filter replacement, pool heater repair — complete equipment care.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing-section" aria-labelledby="pricing-heading">
+      <div class="container">
+        <span class="section-tag">Transparent Pricing</span>
+        <h2 id="pricing-heading">Choose Your Perfect Pool Plan</h2>
+        <p class="section-subtitle">All three packages deliver the same exceptional routine pool service. Simply pick the payment option that fits your budget. Rates are based on pool size — larger pools may have a slightly higher monthly rate.</p>
+        <div class="pricing-grid">
+
+          <div class="pricing-card reveal">
+            <div class="pricing-label">Economical</div>
+            <div class="pricing-price">$125<span>/mo</span></div>
+            <p class="pricing-note">Every six months there will be a charge for water treatments.</p>
+            <ul class="pricing-features">
+              <li>Weekly pool service</li>
+              <li>Chemical balancing</li>
+              <li>Debris removal</li>
+              <li>Free estimate</li>
+            </ul>
+            <a href="#contact" class="btn-pricing">Get Started</a>
+          </div>
+
+          <div class="pricing-card pricing-featured reveal">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-label">Equilibrium</div>
+            <div class="pricing-price">$140<span>/mo</span></div>
+            <p class="pricing-note">1 time per year there will be a charge for water treatments.</p>
+            <ul class="pricing-features">
+              <li>Weekly pool service</li>
+              <li>Chemical balancing</li>
+              <li>Debris removal</li>
+              <li>Annual water treatment included</li>
+              <li>Free estimate</li>
+            </ul>
+            <a href="#contact" class="btn-pricing btn-pricing-featured">Get Started</a>
+          </div>
+
+          <div class="pricing-card reveal">
+            <div class="pricing-label">Unified</div>
+            <div class="pricing-price">$160<span>/mo</span></div>
+            <p class="pricing-note">Water treatments are already included within the monthly charge.</p>
+            <ul class="pricing-features">
+              <li>Weekly pool service</li>
+              <li>Chemical balancing</li>
+              <li>Debris removal</li>
+              <li>All water treatments included</li>
+              <li>Free estimate</li>
+            </ul>
+            <a href="#contact" class="btn-pricing">Get Started</a>
+          </div>
+
+        </div>
+        <p class="pricing-footer">Rates shown are based on standard pool size. We offer <strong>free estimates</strong> on all work. <a href="tel:+17149074517">Call (714) 907-4517</a> to get a quote for your specific pool.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <img src="assets/images/pool-care.jpg" alt="Pool care professional servicing a backyard pool" width="600" height="450" loading="lazy">
+          </div>
+          <div class="about-text reveal">
+            <span class="section-tag">Why Choose Us</span>
+            <h2 id="about-heading">Your Trusted Pool Experts Since 2010</h2>
+            <p>Licensed, bonded, insured, and operating at reasonable rates, JMart Pool Service has been in business since 2010, delivering excellent services to all our clients throughout Orange County.</p>
+            <p>We have dedicated every day to our customers and the providing of top-quality pool maintenance solutions. Our commitment to you is to keep your pool in great condition, advise you of the best practices, and deliver top customer service.</p>
+            <p>Hire us and forget about fluctuating water chemistry, buying and lugging chemicals, and troubleshooting problems. We will do everything for you.</p>
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="about-feature-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <strong>Licensed, Bonded & Insured</strong>
+                  <span>Full coverage for your peace of mind</span>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <strong>Free Estimates</strong>
+                  <span>No surprises — know the cost before we start</span>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <strong>New Customer Discounts</strong>
+                  <span>$130 off for new customers</span>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <strong>Reasonable Rates</strong>
+                  <span>Quality service at competitive prices</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <span class="section-tag">What Customers Say</span>
+        <h2 id="testimonials-heading">Trusted by Pool Owners Across Orange County</h2>
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              <p>"Best pool service provider, go to person I have used services from Jmart for years! They are the life saver! Services always done super professionally with reasonable price, be it pool filter cleaning or Salt call cleaning. Technician is definitely very knowledgeable in pool business and always have answer for me for any questions I have, explains with detail and patience, very good customer service!"</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">J</div>
+              <div>
+                <strong>Julie X.</strong>
+                <time datetime="2025-03-03">March 3, 2025</time>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              <p>"Amazing Work!! I hired this company 5 months ago and I am so happy with the results. They are honest and responsible my pool has never been so clean! I truly recommend their services."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">Z</div>
+              <div>
+                <strong>Zulema V.</strong>
+                <time datetime="2020-05-12">May 12, 2020</time>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              <p>"I hired this company for its swimming pool maintenance services and I am quite impressed. I recommend these specialists for they are truly reliable and very skilled. Thank you for everything!"</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">R</div>
+              <div>
+                <strong>Rose Jackson</strong>
+                <time datetime="2020-04-08">April 8, 2020</time>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="areas" class="areas-section" aria-labelledby="areas-heading">
+      <div class="container">
+        <span class="section-tag">Coverage</span>
+        <h2 id="areas-heading">Serving All of Orange County</h2>
+        <p class="section-subtitle">Available within a 20-mile radius of Fullerton, CA — covering virtually all of Orange County and surrounding areas.</p>
+        <div class="areas-grid" role="list">
+          <span role="listitem">Fullerton, CA</span>
+          <span role="listitem">Anaheim, CA</span>
+          <span role="listitem">Orange, CA</span>
+          <span role="listitem">Yorba Linda, CA</span>
+          <span role="listitem">Tustin, CA</span>
+          <span role="listitem">Garden Grove, CA</span>
+          <span role="listitem">Westminster, CA</span>
+          <span role="listitem">La Habra, CA</span>
+          <span role="listitem">Newport Beach, CA</span>
+          <span role="listitem">Irvine, CA</span>
+          <span role="listitem">Huntington Beach, CA</span>
+          <span role="listitem">Santa Ana, CA</span>
+          <span role="listitem">Mission Viejo, CA</span>
+          <span role="listitem">Lake Forest, CA</span>
+          <span role="listitem">Cypress, CA</span>
+          <span role="listitem">Buena Park, CA</span>
+          <span role="listitem">Placentia, CA</span>
+          <span role="listitem">Fountain Valley, CA</span>
+          <span role="listitem">Brea, CA</span>
+          <span role="listitem">Whittier, CA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag">Get In Touch</span>
+            <h2 id="contact-heading">Request a Free Estimate</h2>
+            <p>Ready for a sparkling clean pool? Contact us today and we'll provide a free estimate for your specific needs. We serve all of Orange County.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.02z"/></svg>
+                </div>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+17149074517">(714) 907-4517</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <span>Fullerton, CA 92833</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                  <strong>Hours</strong>
+                  <span>Mon–Sat: 8:00am – 6:00pm</span>
+                  <span>Sunday: Closed</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                </div>
+                <div>
+                  <strong>We Accept</strong>
+                  <span>Cash, Check, Venmo, CashApp, Zelle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrap reveal">
+            <form class="contact-form" action="https://formspree.io/f/xyzformspree" method="POST" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="Jane Smith" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" required placeholder="(714) 555-0100" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service">
+                  <option value="">Select a service…</option>
+                  <option>Regular Pool Maintenance</option>
+                  <option>Pool Filter Cleaning</option>
+                  <option>Motor Pump Repair</option>
+                  <option>Pool Acid Wash</option>
+                  <option>Pool Equipment Service</option>
+                  <option>Pool Lighting</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your pool and what you need…"></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send My Free Estimate Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-200.png" alt="JMart Pool Service" width="140" height="52" loading="lazy">
+          <p>Licensed, bonded, and insured pool service company serving Fullerton, CA and all of Orange County since 2010.</p>
+          <a href="https://www.facebook.com/jmartpoolservice/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="JMart Pool Service on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            Facebook
+          </a>
+        </div>
+        <div class="footer-links">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Regular Pool Maintenance</a></li>
+            <li><a href="#services">Pool Filter Cleaning</a></li>
+            <li><a href="#services">Motor Pump Repair</a></li>
+            <li><a href="#services">Pool Acid Wash</a></li>
+            <li><a href="#services">Pool Lighting</a></li>
+            <li><a href="#services">Equipment Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#areas">Service Areas</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><a href="tel:+17149074517">(714) 907-4517</a></p>
+          <p>Fullerton, CA 92833</p>
+          <p>Mon–Sat: 8am–6pm</p>
+          <p>We accept: Cash, Check,<br>Venmo, CashApp, Zelle</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 JMart Pool Service. All rights reserved. | Fullerton, CA 92833 | <a href="tel:+17149074517">(714) 907-4517</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

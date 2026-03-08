@@ -1,0 +1,115 @@
+{
+  "business_name": "JMart Pool Service",
+  "phone": "(714) 907-4517",
+  "email": "",
+  "address": "Fullerton, CA 92833",
+  "hours": {
+    "Monday": "8:00am - 6:00pm",
+    "Tuesday": "8:00am - 6:00pm",
+    "Wednesday": "8:00am - 6:00pm",
+    "Thursday": "8:00am - 6:00pm",
+    "Friday": "8:00am - 6:00pm",
+    "Saturday": "8:00am - 6:00pm",
+    "Sunday": "Closed"
+  },
+  "in_business_since": "2010",
+  "licenses": "Licensed, bonded, insured",
+  "payment_methods": ["Cash", "Check", "Venmo", "CashApp", "Zelle"],
+  "promotions": [
+    "$130 Off for New Customer on the 2nd Month or Free Filter Cleaning *w/ 6 Months Agreement",
+    "Customer Referral – $130 Off"
+  ],
+  "pricing": [
+    {
+      "name": "Economical Package",
+      "price": "$125/mo",
+      "notes": "Every six months there will be a charge for water treatments."
+    },
+    {
+      "name": "Equilibrium Package",
+      "price": "$140/mo",
+      "notes": "1 time per year there will be a charge for water treatments."
+    },
+    {
+      "name": "Unified Package",
+      "price": "$160/mo",
+      "notes": "Water treatments are already included within the monthly charge."
+    }
+  ],
+  "services": [
+    "Regular Pool Maintenance",
+    "Pool Filter Cleaning",
+    "Motor Pump Repair",
+    "Pool Acid Wash",
+    "Pool Equipment Installation",
+    "Pool Inspections",
+    "Pool Lighting Installation & Replacement",
+    "Pool Heater Repair",
+    "Pool Pump Replacement",
+    "Salt Systems",
+    "Automation Upgrades",
+    "Sand Filter Replacement"
+  ],
+  "about_text": "Licensed, bonded, insured, and operating at reasonable rates, JMart Pool Service has been in business since 2010, delivering excellent services to all its clients. We also give free estimates on our work and discounts to new customers.",
+  "areas_served": [
+    "Fullerton, CA",
+    "Orange County, CA",
+    "Yorba Linda, CA",
+    "Anaheim, CA",
+    "Tustin, CA",
+    "Garden Grove, CA",
+    "Westminster, CA",
+    "La Habra, CA",
+    "Mission Viejo, CA",
+    "Newport Beach, CA",
+    "Orange, CA",
+    "Santa Ana, CA",
+    "Irvine, CA",
+    "Huntington Beach, CA",
+    "Lake Forest, CA",
+    "Cypress, CA",
+    "Buena Park, CA",
+    "Placentia, CA",
+    "Fountain Valley, CA",
+    "Brea, CA"
+  ],
+  "testimonials": [
+    {
+      "name": "Julie X.",
+      "date": "Mar 3, 2025",
+      "text": "Best pool service provider, go to person I have used services from Jmart for years! They are the life saver! Services always done super professionally with reasonable price, be it pool filter cleaning or Salt call cleaning. Technician is definitely very knowledgeable in pool business and always have answer for me for any questions I have, explains with detail and patience, very good customer service! Technician is also very observing, and notice small changes and future to watch out items, someone you can trust your pool and equipments with! I strongly recommend Jmart service to any pool owners!"
+    },
+    {
+      "name": "Zulema V.",
+      "date": "May 12, 2020",
+      "text": "Amazing Work!! I hired this company 5 months ago and I am so happy with the results. They are honest and responsible my pool has never been so clean! I truly recommend their services."
+    },
+    {
+      "name": "Rose Jackson",
+      "date": "Apr 8, 2020",
+      "text": "I hired this company for its swimming pool maintenance services and I am quite impressed. I recommend these specialists for they are truly reliable and very skilled. Thank you for everything!"
+    }
+  ],
+  "social_links": {
+    "facebook": "https://www.facebook.com/jmartpoolservice/"
+  },
+  "brand_colors": {
+    "primary": "#0B5FA5",
+    "secondary": "#2EA3F2",
+    "dark": "#1a2a3a",
+    "light": "#f0f7ff"
+  },
+  "original_site": "https://jmartpoolserviceca.com/",
+  "images_downloaded": [
+    "assets/images/logo.png",
+    "assets/images/hero.webp",
+    "assets/images/pump-repair.webp",
+    "assets/images/filter-pumps.webp",
+    "assets/images/badge.webp",
+    "assets/images/acid-wash.jpg",
+    "assets/images/pool-maintenance.jpg",
+    "assets/images/pool-care.jpg",
+    "assets/images/lighting.jpg",
+    "assets/favicon.png"
+  ]
+}

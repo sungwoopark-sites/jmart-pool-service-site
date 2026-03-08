@@ -1,0 +1,87 @@
+/* =============================================
+   JMart Pool Service — Animations
+   ============================================= */
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+.services-grid .service-card:nth-child(1) { transition-delay: 0.05s; }
+.services-grid .service-card:nth-child(2) { transition-delay: 0.1s; }
+.services-grid .service-card:nth-child(3) { transition-delay: 0.15s; }
+.services-grid .service-card:nth-child(4) { transition-delay: 0.2s; }
+.services-grid .service-card:nth-child(5) { transition-delay: 0.25s; }
+.services-grid .service-card:nth-child(6) { transition-delay: 0.3s; }
+
+.pricing-grid .pricing-card:nth-child(1) { transition-delay: 0.05s; }
+.pricing-grid .pricing-card:nth-child(2) { transition-delay: 0.12s; }
+.pricing-grid .pricing-card:nth-child(3) { transition-delay: 0.19s; }
+
+.testimonials-grid .testimonial-card:nth-child(1) { transition-delay: 0.05s; }
+.testimonials-grid .testimonial-card:nth-child(2) { transition-delay: 0.12s; }
+.testimonials-grid .testimonial-card:nth-child(3) { transition-delay: 0.19s; }
+
+/* Hero text entrance */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-badge { animation: heroFadeUp 0.6s ease 0.1s both; }
+.hero h1 { animation: heroFadeUp 0.6s ease 0.2s both; }
+.hero-desc { animation: heroFadeUp 0.6s ease 0.35s both; }
+.hero-actions { animation: heroFadeUp 0.6s ease 0.5s both; }
+.hero-stats { animation: heroFadeUp 0.6s ease 0.6s both; }
+
+/* Hamburger open state */
+.nav-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.nav-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile nav slide in */
+.mobile-nav {
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  pointer-events: none;
+}
+.mobile-nav.open {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Smooth pulse on CTA */
+@keyframes pulseCTA {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(11,95,165,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(11,95,165,0); }
+}
+.btn-submit:focus-visible {
+  animation: pulseCTA 1.5s ease infinite;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .hero-badge, .hero h1, .hero-desc, .hero-actions, .hero-stats {
+    animation: none;
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  .mobile-nav { transition: none; }
+}
